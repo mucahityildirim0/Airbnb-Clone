@@ -27,6 +27,7 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
         options={getAll()}
         value={value}
         onChange={(value) => {
+          if (!onChange) return;
           onChange(value as CountrySelectValue);
         }}
         formatOptionLabel={(option: any) => (
