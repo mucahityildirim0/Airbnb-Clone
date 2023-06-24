@@ -134,6 +134,7 @@ const SearchModal = () => {
         onChange={(value) => setLocation(value as CountrySelectValue)}
       />
       <hr />
+      {/* @ts-expect-error Server Component */}
       <Map center={location?.latlng} />
     </div>
   );

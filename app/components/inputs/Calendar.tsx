@@ -17,6 +17,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
   disabledDates,
 }) => {
   return (
+    /* @ts-expect-error Server Component */
     <DateRange
       rangeColors={["#262626"]}
       ranges={[value]}
